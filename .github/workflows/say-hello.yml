@@ -1,0 +1,9 @@
+name: show-directory
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # checkout — клонирует репозиторий
+      - uses: actions/checkout@v4
+      - run: make say-hello
